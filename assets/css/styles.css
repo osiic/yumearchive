@@ -344,6 +344,7 @@ img {
   }
 
   .home {
+    margin-top: 4rem;
     height: initial;
     row-gap: 4rem;
   }
