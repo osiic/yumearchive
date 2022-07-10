@@ -188,12 +188,13 @@ img {
 }
 
 .home__button {
+  /* overflow: hidden; */
   margin-top: 2rem;
   display: inline-block;
   background-color: var(--text-color);
   color: #fff;
   padding: .80rem 1.5rem;
-  border-radius: .5rem;
+  border-radius: 2.5rem;
   transition: .4s;
   font-family: var(--body-font2);
 }
