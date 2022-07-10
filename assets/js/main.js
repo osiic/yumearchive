@@ -47,9 +47,14 @@ window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
+    origin: 'top',
     distance: '90px',
-    duration: 3000,
+    duration:3000,
+    delay: 400,
 })
 
-sr.reveal(`.home__data`, { origin: 'top', delay: 400 })
-sr.reveal(`.home__img`, { origin: 'bottom', delay: 600 })
+sr.reveal(`.nav`, { origin: 'top', delay: 450 })
+sr.reveal(`.home__data`, { origin: 'top', delay: 600 })
+sr.reveal(`.home__img`, { origin: 'bottom', delay: 800 })
+sr.reveal(``, { origin: 'left'})
+sr.reveal(``, { origin: 'right'})

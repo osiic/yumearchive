@@ -194,9 +194,9 @@ img {
   background-color: var(--text-color);
   color: #fff;
   padding: .80rem 1.5rem;
-  border-radius: 2.5rem;
+  border-radius: 2rem;
   transition: .4s;
-  font-family: var(--body-font2);
+  font-family: var(--body-font1);
 }
 
 .home__button:hover {
