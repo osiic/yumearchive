@@ -41,6 +41,7 @@ body {
   font-size: var(--normal-font-size);
   font-weight: 500;
   color: var(--text-color);
+  background-color: var(--first-color);
 }
 
 ul {
@@ -165,7 +166,7 @@ img {
 /*=============== HOME ===============*/
 .home {
   background-color: var(--first-color);
-  padding: 0rem 0 2rem;
+  margin: 2rem 0 0 0;
   height: 100vh;
   display: grid;
 }
@@ -226,7 +227,7 @@ img {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: .5rem;
+  width: 5px;
   background-color: #acacac;
 }
 
@@ -239,26 +240,26 @@ img {
 .scrollup {
   position: fixed;
   right: 1rem;
-  bottom: -30%;
+  bottom: -20%;
   background-color: var(--container-color);
-  box-shadow: 0 8px 12px hsla(228, 66%, 45%, .1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
   display: inline-flex;
   padding: .35rem;
   border-radius: .25rem;
   color: var(--title-color);
   font-size: 1.25rem;
-  z-index: var(--z-tooltip);
+  z-index: 5;
   transition: .3s;
 }
 
 .scrollup:hover {
   transform: translateY(-.25rem);
-  color: var(--first-color);
+  color: #d3008d;
 }
 
 /* Show Scroll Up*/
 .show-scroll {
-  bottom: 8rem;
+  bottom: 4rem;
 }
 
 
@@ -309,6 +310,9 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  .home {
+    margin: 0;
+  }
   .home__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
